@@ -27,7 +27,7 @@ import StoreKit
 // MARK: Purchases
 
 // Purchased or restored product
-public struct Purchase {
+public struct Purchase: GenericPurchase {
     public let productId: String
     public let quantity: Int
     public let transaction: PaymentTransaction
@@ -35,12 +35,20 @@ public struct Purchase {
     public let needsFinishTransaction: Bool
 }
 
-public struct PurchaseDetails {
+public struct PurchaseDetails: GenericPurchase {
     public let productId: String
     public let quantity: Int
     public let product: SKProduct
     public let transaction: PaymentTransaction
     public let needsFinishTransaction: Bool
+}
+
+public protocol GenericPurchase
+{
+    var productId: String { get }
+    var quantity: Int { get }
+    var transaction: PaymentTransaction { get }
+    var needsFinishTransaction: Bool { get }
 }
 
 //Conform to this protocol to provide custom receipt validator
