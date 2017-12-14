@@ -213,6 +213,12 @@ extension SwiftyStoreKit {
             sharedInstance.paymentQueueController.shouldAddStorePaymentHandler = shouldAddStorePaymentHandler
         }
     }
+    
+    public static var downloadUpdateHandler: DownloadUpdateHandler? {
+        didSet {
+            sharedInstance.paymentQueueController.downloadUpdateHandler = downloadUpdateHandler
+        }
+    }
 }
 
 extension SwiftyStoreKit {

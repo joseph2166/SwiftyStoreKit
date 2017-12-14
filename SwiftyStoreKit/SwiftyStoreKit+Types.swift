@@ -78,6 +78,8 @@ public struct RestoreResults {
 
 public typealias ShouldAddStorePaymentHandler = (_ payment: SKPayment, _ product: SKProduct) -> Bool
 
+public typealias DownloadUpdateHandler = ([SKDownload]) -> Void
+
 // MARK: Receipt verification
 
 // Info for receipt returned by server
