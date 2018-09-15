@@ -574,7 +574,7 @@
 					};
 					6502F62C1B985C40004E342D = {
 						CreatedOnToolsVersion = 7.0;
-						LastSwiftMigration = 0920;
+						LastSwiftMigration = 1000;
 					};
 					654287ED1E79F5A000F61800 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -1088,7 +1088,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.musevisions.iOS.SwiftyStoreKit;
 				PRODUCT_NAME = SwiftyStoreKit;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1114,7 +1114,7 @@
 				PRODUCT_NAME = SwiftyStoreKit;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
